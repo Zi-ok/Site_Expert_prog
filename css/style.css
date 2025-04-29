@@ -1,0 +1,43 @@
+body{
+    margin: 50px;
+
+}
+.header{   
+    text-align: center;
+    
+    border-style:ridge;
+    border-color: red;
+}
+.main{
+    
+}
+.main p{
+    text-indent: 20px;
+    margin-top: -5px;
+}
+.imgbox{
+    /* float: left; */
+}
+
+.menu{
+    background-color: rgb(190, 190, 190);
+    text-align:center ;
+    
+    border-style:ridge;
+    border-color: red;
+}
+.content{
+    margin: 20px;
+    text-indent: 20px;
+}
+.keywords{
+    margin: 20px;
+    font-size: x-small;
+}
+
+.formula{
+    margin-left: 30px;
+    font-weight: bold;
+    
+}
+/* .formula>span{background-color: red; text-align-last: justify; } */
