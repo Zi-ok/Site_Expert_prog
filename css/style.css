@@ -1,7 +1,8 @@
 body{
     margin: 50px;
-
+   
 }
+h2{ text-align: center;}
 .header{   
     text-align: center;
     
@@ -17,15 +18,34 @@ body{
 }
 .imgbox{
     /* float: left; */
+    margin-top: 20px; margin-bottom: 27px; margin-right: 15px;margin-left: 15px;
+    width: 500px; height: 400px;
+    border-radius: 5px;    
+    align-items: center;    
+}
+.imgbox img{
+    width: 470px; height: 400px;
+}
+.imgbox div{
+    text-align: center;
+    font-size:80%;
 }
 
 .menu{
     background-color: rgb(190, 190, 190);
+    display: flex; justify-content: center;
     text-align:center ;
-    
+    margin-bottom: 20px;
+
     border-style:ridge;
     border-color: red;
 }
+.menu a{ margin-right: 3px;   }
+.langimg{
+    width: 16px; height: 12px;
+    margin-right: 2px;    
+}
+
 .content{
     margin: 20px;
     text-indent: 20px;
