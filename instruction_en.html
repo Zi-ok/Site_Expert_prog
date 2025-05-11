@@ -18,7 +18,7 @@
             <a href="./main_en.html">MAIN</a>
             <a href="./method_en.html">METHOD</a>
             <a href="./instruction_en.html">INSTRUCTION</a>
-            <a download href="./Files/testfile.rar">DOWNLOAD</a>
+            <a download href="./Files/Expert_en.rar">DOWNLOAD</a>
             <div style="margin-left: auto;"><a href="instruction.html"><img src="./Img/ua.svg" alt="UA" class="langimg">UA</a> <a href="#menu"><img src="./Img/gb.svg" alt="EN" class="langimg">EN</a></div>
          </div>
     <!-- 2 -->
@@ -37,14 +37,14 @@
         <p>The first illustrative example is taken from [<a href="#lib4">4</a>] and consists of quality indicators of tractors, which significantly affect the competitiveness of machines. The list of quality indicators can be entered from the file tractor.txt (click the "Browse" button and select this file). Double click with the left mouse button in the field below the 'Browse' button. The list of indicators will appear on the screen.</p>
         <div><p>
             <div class="imgbox">
-                <img src="./Img/001_en.jpg" alt="Скріншот 1" >
-                <div>Скріншот 1</div>
+                <img src="./Img/001_en.jpg" alt="Screenshot 1" >
+                <div>Screenshot 1</div>
             </div>
         <br>The first step of the expert in this programme is to rank the given tractor quality indicators according to their importance for its competitiveness in accordance with the bottom line on the screen: <p style="margin-top: 5px;">1>2>3>4>5>6>7>8>9>10>11>12.</p></p></div>
         <div><p>Using the ‘Up’ and ‘Down’ buttons, you can arrange the list of indicators in the same way as the leading tractor specialists:</p>
             <div class="imgbox">
-                <img src="./Img/002_en.jpg" alt="Скріншот 2" >
-                <div>Скріншот 2</div>
+                <img src="./Img/002_en.jpg" alt="Screenshot 2" >
+                <div>Screenshot 2</div>
             </div>
         <p>Let's take a closer look at the ordering process. Consider the following example. To move the most important indicator ‘Specific fuel consumption’, which is located in the seventh row (Screenshot 1) to the first place, you need to select the seventh and first rows with the left mouse button and then press the ‘Up’ button. If you want to move an indicator up or down one line, just select only this indicator and click the corresponding button.</p>
         <p>Some indicators are considered by experts to have the same weight. This should be noted in the row below the list. For example, 'Engine power' and 'Weight' are equally important for assessing the competitiveness of a tractor. Therefore, between numbers 2 and 3 (the numbering corresponds to the ranked list in screenshot 2) in the last line on the screen, change the '>' sign to a '=' sign. Do the same with the signs between numbers 6, 7 and 8 (to change the sign, left-click on the corresponding window, press the 'Delete' or 'Backspace' key on your keyboard, then press the '=' key). As a result, the bottom line will look like this:
@@ -52,45 +52,45 @@
         </p>
         <p>To create a complex relationship, click on the Create complex relationship button. A line appears at the bottom, in which you must enter the number of the indicator. It must be at least 2 less than the total number of indicators. In our case it is less than 11 because the right side of a complex relationship of type (2) (see <b><span><a href="./method_en.html">METHOD</a></span></b>) can have two or more members. If you double-click on the window, two windows will appear on the right. The first one has a '>' sign. This sign can be changed to a '<' or '=' sign. The right window shows all the numbers of the indicators, the larger numbers in the left window. They are connected by the '&' sign. The expert should delete unnecessary numbers with the corresponding '&' signs. (Deletion is carried out using the 'Delete' key). If we want the weight of an indicator to be slightly different from the weight of the neighbouring indicators, we can enter a complex relationship of the following type 1 < 2&3. The last relation can be read as follows The importance of the first indicator is less than the importance of the second and third indicators together.</p>        
         <div class="imgbox">
-            <img src="./Img/003_en.jpg" alt="Скріншот 3" >
-            <div>Скріншот 3</div>
+            <img src="./Img/003_en.jpg" alt="Screenshot 3" >
+            <div>Screenshot 3</div>
         </div>
         <p style="margin-top: 10px;">Once you have ranked the indicators and created simple and complex relationships, you can obtain the weights of the indicators by clicking on the 'Calculate weights' button. As a result of solving the linear programming problem, a column of weights for these indicators will appear in front of the indicators on the left.</p>
             <div class="imgbox">
-                <img src="./Img/004_en.jpg" alt="Скріншот 4" >
-                <div>Скріншот 4</div>
+                <img src="./Img/004_en.jpg" alt="Screenshot 4" >
+                <div>Screenshot 4</div>
             </div>
         <p>This weighting calculation can be printed out and, if the expert is fully satisfied, the subroutine for converting qualitative assessments of statements into quantitative ones can be exited by clicking on the button in the top right-hand corner.</p>
         <p>The resulting weights can be adjusted by clicking on one of the 'Increase weight', 'Reduce weight' or 'Define' buttons. If you click on one of the 'Increase weight' or 'Reduce weight' buttons, the 'Correction %' window appears, in which you enter the percentage, 10 by default, and then the number of the indicator whose weight you wish to adjust. By double-clicking on this window, the weights will be modified according to the simple and complex constraints entered (4-6 ) (see <b><span><a href="./method_en.html">METHOD</a></span></b>). The 'define' button allows you to define the weight of a given indicator. A new column will appear on the left of the list of indicators with the weights defined.</p>
             <div class="imgbox">
-                <img src="./Img/005_en.jpg" alt="Скріншот 5" >
-                <div>Скріншот 5</div>
+                <img src="./Img/005_en.jpg" alt="Screenshot 5" >
+                <div>Screenshot 5</div>
             </div>
         <p>You can clear the calculated weights by clicking on the 'Clear weight calculation' button and start the qualitative assessment conversion from the beginning.</p>
         <p>Clicking the 'Write to file' button will write the leftmost column of weights and indicators to the selected file. Click on the 'View' button to view the contents of the file.</p>
         <div class="imgbox">
-            <img src="./Img/006_en.jpg" alt="Скріншот 3" >
-            <div>Скріншот 6</div>
+            <img src="./Img/006_en.jpg" alt="Screenshot 3" >
+            <div>Screenshot 6</div>
         </div>
         <p>The second demonstration example [<a href="#lib5">5</a>]:</p>
         <div class="imgbox">
-            <img src="./Img/007_en.jpg" alt="Скріншот 7" >
-            <div>Скріншот 3</div>
+            <img src="./Img/007_en.jpg" alt="Screenshot 7" >
+            <div>Screenshot 3</div>
         </div>
         <p>Create the complex relation 1=3&4 (the weight of the first indicator is equal to the sum of the third and fourth indicators) by clicking on the 'Create complex relation' button. Enter '1' in the left window, replace the '>' sign with '=' and delete unnecessary characters in the third window. Let's do the calculation:</p>
             <div class="imgbox">
-                <img src="./Img/008_en.jpg" alt="Скріншот 8" >
-                <div>Скріншот 8</div>
+                <img src="./Img/008_en.jpg" alt="Screenshot 8" >
+                <div>Screenshot 8</div>
             </div>
         <p>Use the ‘define’ button to set the weight of the 6th indicator (0.08). Then the weight of the 5th indicator (0.1), then the 4th (0.12) and the 3rd (0.15). </p>
         <div class="imgbox">
-            <img src="./Img/009_en.jpg" alt="Скріншот 9" >
-            <div>Скріншот 9</div>
+            <img src="./Img/009_en.jpg" alt="Screenshot 9" >
+            <div>Screenshot 9</div>
         </div>
         <p>In the third example (tanker), the number of indicators is more than 14:</p>
         <div class="imgbox">
-            <img src="./Img/010_en.jpg" alt="Скріншот 10" >
-            <div>Скріншот 10</div>
+            <img src="./Img/010_en.jpg" alt="Screenshot 10" >
+            <div>Screenshot 10</div>
         </div>
         <p>Possible ordering algorithm:
             <ol>
@@ -105,8 +105,8 @@
         </p>
         Ranking result using the ‘Up’ and ‘Down’ buttons:
         <div class="imgbox">
-            <img src="./Img/011_en.jpg" alt="Скріншот 11" >
-            <div>Скріншот 11</div>
+            <img src="./Img/011_en.jpg" alt="Screenshot 11" >
+            <div>Screenshot 11</div>
         </div>
         <br>
         <p>
