@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="convert of expert qualitative characteristics, calculation of weights using the simplex method, non-transitivity of expert assessments, correction of the given weight" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Method</title>
 </head>
@@ -18,7 +19,7 @@
             <a href="./main_en.html">MAIN</a>
             <a href="./method_en.html">METHOD</a>
             <a href="./instruction_en.html">INSTRUCTION</a>
-            <a download href="./Files/Expert_en.rar">DOWNLOAD</a>
+            <a download href="./download_en.html">DOWNLOAD</a>
             <div style="margin-left: auto;"><a href="./method.html"><img src="./Img/ua.svg" alt="UA" class="langimg">UA</a> <a href="#menu"><img src="./Img/gb.svg" alt="EN" class="langimg">EN</a></div>
          </div>
     <!-- 3 ≤≥≠-->
@@ -27,7 +28,7 @@
         <p>
             Method [<a href="#lib1">1</a>] allows to determine in a quantitative form the importance, weight of any characteristics (indicators) of objects set by qualitative assessments. Moreover, the expert is not required to provide numerical characteristics of the indicators, for example, scores. It is enough to rank the given indicators by their importance, i.e. to provide information that orders the weights:
             <p class="formula"> Pi ≥ Pj , i ≠ j,	i,j = 1,2,...,n,				<span>( 1 )</span> </p>
-            where <b>n</b> is the number of specified indicators; the symbol <b>Pi</b> denotes the subjective assessment of the importance of the i-th indicator. This is information  of the following type:
+            where <b>n</b> is the number of specified indicators; the symbol <b>Pi</b> denotes the subjective assessment of the importance, weight of the i-th indicator. This is information  of the following type:
             <ul style="margin-left: 20px;">
                 <li>‘The first indicator is more important than the second’;</li>
                 <li>‘The third and fourth indicators are equally important’.</li>
@@ -40,7 +41,7 @@
                 <li>‘The seventh indicator has the same weight as the eighth, ninth, and tenth indicators combined’;</li>
                 <li>‘The weight of the eleventh is less than the weight of the twelfth and thirteenth combined’.</li>
             </ul>
-                <p>From this information, it is possible to obtain upper and lower estimates of the weights of each indicator by solving <b>2n</b> problems of finding a maximum and minimum of a linear form under linear constraints, which can be derived from relations (1) and (2). Finding the lower (upper) bound of the weight of the i-th indicator is reduced to solving the following linear programming problem::</p>
+                <p>From this information, it is possible to obtain upper and lower estimates of the weights of each indicator by solving <b>2n</b> problems of finding a maximum and minimum of a linear form under linear constraints, which can be derived from relations (1) and (2). Finding the lower (upper) bound of the weight of the i-th indicator is reduced to solving the following linear programming problem:</p>
                 <p><p>Find</p>
                     <p class="formula"> min(max)[±Pi]	 							<span>( 3 )</span> </p>
                 <p>under the constraints:</p>
@@ -53,11 +54,10 @@
             <p>If the expert is limited to a simple ranking and does not introduce complex constraints such as (2), then in a program that implements this method, the upper and lower weight estimates are calculated using formulas in which these estimates are functions of the ordinal number of the indicator in the ranked row and the ‘>’ or ‘=’ sign that precedes this indicator. If there are complex constraints, the problem of finding the upper and lower weights is solved by the simplex method (3 - 7).</p>
             <p>Simple relations of type ( 1 ) are automatically created in the programme as a ranked series:</p>
             <p class="formula"> P1 > P2  > P3  >,..., >Pn  .						<span>( 8 )</span></p>
-            <p>The expert just needs to arrange the list of indicators according to this series and change the ‘>’ sign to ‘=’ where necessary. Thanks to the ‘user-friendly interface’ developed in the programme, it is easy to cope with ranking, building simple relations of type (1), and avoiding errors of non-transitivity of expert opinions. Let's explain the non-transitivity of assessments using the following example. If indicator <b>A</b> is more important than indicator <b>B</b>, and <b>B</b> is more important than indicator <b>C</b>, then a person with a large number of indicators (more than 7, for experts - more than 14) in a pairwise comparison can say that <b>C</b> is more important than <b>A</b>. Numerous experiments on comparing different alternatives have shown that people behave non-transitively in these comparisons: the percentage of non-transitivity errors reaches 27-40% [<a href="#lib2">2</a>]. The structure of the list of indicators developed in the programme with the corresponding mechanism of permutation of indicators excludes non-transitive errors (for more details, see the first example).</p>
+            <p>The expert just needs to arrange the list of indicators according to this series and change the ‘>’ sign to ‘=’ where necessary. Thanks to the ‘user-friendly interface’ developed in the programme, it is easy to cope with ranking, building simple relations of type (1), and avoiding errors of non-transitivity of expert opinions. Let's explain the non-transitivity of assessments using the following example. If indicator <b>A</b> is more important than indicator <b>B</b>, and <b>B</b> is more important than indicator <b>C</b>, then a person with a large number of indicators (more than 7, for experts - more than 14) in a pairwise comparison can say that <b>C</b> is more important than <b>A</b>. Numerous experiments on comparing different alternatives have shown that people behave non-transitively in these comparisons: the percentage of non-transitivity errors reaches 27-40% [<a href="#lib2">2</a>]. The structure of the list of indicators developed in the programme with the corresponding mechanism of permutation of indicators excludes non-transitive errors (for more details, see the first example on the “INSTRUCTION” page).</p>
             <p>The input of complex relations of type ( 2 ) is automated and also takes into account the non-transitive behaviour of people. The structure of building simple and complex relations developed in the program allows to significantly reduce the probability of non-transitive errors and, as a result, the incompatibility of the constraint system (4-6).</p>
             <p>After finding the lower and upper limits for assessing the weight of each indicator, i.e. the interval value of each weight, it is necessary to find the point value of the weight within the interval. The point values are found based on the principle of the smallest deviation from the middle of the interval. These deviations are calculated in proportion to the width of the interval. At the same time, of course, the constraints (4), (5) and (6) must be met. This is achieved by organising an iterative process, in each iteration of which the violations of constraints (4), (5) and (6) are reduced. This iterative process is convergent. As a rule, one or two iterations are sufficient to obtain the result.</p>
             <p>The programme provides for the possibility of further correction of individual weights (increase, decrease or definition). The weights can be changed within the upper and lower bounds calculated as a result of solving the linear programming problem (3 - 7). The weight specified in the dialogue box changes by 7 to 10 percent at a time. The change in the programme takes place in two stages. First, the selected weight changes in the specified direction (increase or decrease) by 10%. Then, an iterative process of changing all weights is started to ensure that the simple  ( 4 ), complex ( 5 ) constraints and the condition ( 6 ) - the sum of all weights must be equal to one - are met. In this iterative process, the given weighting may eventually change by less than 10%. The possibility of correction allows the expert to make a fairly precise adjustment of the indicator scores.</p>
-            <p>The programme provides for the possibility of further correction of individual weights (increase, decrease or definition). The weights can be changed within the upper and lower bounds calculated as a result of solving the linear programming problem (3 - 7). The weight specified in the dialogue box changes by 7 to 10 percent at a time. The change in the programme takes place in two stages. First, the selected weight changes in the specified direction (increase or decrease) by 10%. Then, an iterative process of changing all weights is started to ensure that the simple  ( 4 ), complex ( 5 ) constraints and the condition ( 6 ) - the sum of all weights must be equal to one - are met. In this iterative process, the given weighting may eventually change by less than 10%. The possibility of correction allows the expert to make a fairly precise adjustment of the indicator scores.</p>   
             <p>To work with the developed program, it is enough to:</p>
             <ul>
                 <li>rank the indicators;</li>
@@ -66,7 +66,7 @@
                 <li>calculate the weights of indicators by clicking the appropriate button;</li>
                 <li>if necessary, adjust the ratio between the obtained weights.</li>
             </ul>
-            <p>The abandonment of the requirement for numerical estimates of indicators greatly simplifies the work of experts and increases the reliability of their conclusions. The calculations of the competitiveness levels of products of domestic and foreign manufacturers (shipyards, metallurgical plants, tractor plants) and comparative characteristics of higher education institutions made with the help of the EXPERT package showed that the results obtained fully coincide with the previous conclusions of the experts. The latter, who used point estimates, had to spend much more time and effort on calculating weights and evaluating indicators. In addition, the EXPERT package allows for a higher accuracy in calculating the weightings of indicators, as it has a mechanism for fine-tuning the weighting ratios.</p>
+            <p>The abandonment of the requirement for numerical estimates of indicators greatly simplifies the work of experts and increases the reliability of their conclusions. The calculations of the competitiveness levels of products of domestic and foreign manufacturers (shipyards, metallurgical plants, tractor plants) and comparative characteristics of higher education institutions made with the help of the EXPERT package showed that the results obtained fully coincide with the previous conclusions of the experts. In addition, the EXPERT package allows for a higher accuracy in calculating the weightings of indicators, as it has a mechanism for fine-tuning the weighting ratios.</p>
             <ol>
                 <li id="lib1">Cheban O. D. Transformation of expert qualitative characteristics of objects into quantitative estimates. International Scientific Journal. No. 3-4' 20022.</li>
                 <li id="lib2">Larichev O.I. - Moscow: Science and Art of Decision Making, 1979</li>
@@ -74,6 +74,7 @@
             
         </p>
     </div>
+    <div class="keywords" id="keyw">Keywords: convert of expert qualitative characteristics, calculation of weights using the simplex method, non-transitivity of expert assessments, correction of the given weight.</div>
     <a href="main_en.html#menu">Back to main page.</a>
 </body>
 </html>

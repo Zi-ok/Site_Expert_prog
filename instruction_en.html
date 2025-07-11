@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="program of conversion of qualitative indicators, transitional structure, demonstration examples of transformation, maximum number of indicators"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>INSTRUCTION</title>
 </head>
@@ -18,29 +19,29 @@
             <a href="./main_en.html">MAIN</a>
             <a href="./method_en.html">METHOD</a>
             <a href="./instruction_en.html">INSTRUCTION</a>
-            <a download href="./Files/Expert_en.rar">DOWNLOAD</a>
+            <a download href="./download_en.html">DOWNLOAD</a>
             <div style="margin-left: auto;"><a href="instruction.html"><img src="./Img/ua.svg" alt="UA" class="langimg">UA</a> <a href="#menu"><img src="./Img/gb.svg" alt="EN" class="langimg">EN</a></div>
          </div>
     <!-- 2 -->
     <div class="main">
-        <p>The transformation programme makes it possible to obtain quantitative expert estimates of the value of the qualitative indicators of the object under study. The following methods of obtaining quantitative expert estimates are known [<a href="#lib1">1</a>]:</p>
+        <p>The conversion program allows obtaining quantitative estimates of the value of expert qualitative indicators of the object under study. The following methods of obtaining quantitative expert estimates are known [<a href="#lib1">1</a>]:</p>
         <ul>
-            <li>Ranking;</li>
-            <li>Paired comparison;</li>
+            <li>ranking;</li>
+            <li>pairwise comparison;</li>
             <li>point scores.</li>
         </ul>
         <p>The disadvantage of the ranking method is the non-transitivity of expert opinions with a large number of indicators. Let's illustrate the non-transitivity of scores with the following example. For example, if indicator A is more important than indicator B, and B is more important than indicator C, then a person with a large number of indicators (more than 7, and for experts (in Latin, expertus - "experienced") - more than 14) in pairwise comparison can say that C is more important than A. Numerous experiments comparing different alternatives have shown that people behave in a non-transitive way in such comparisons: the percentage of non-transitive errors reaches 27-40 %. [<a href="#lib2">2</a>].</p>
-        <p>In the method, [<a href="#lib3">3</a>] and the programme described here, a structure is used in which the qualitative characteristics of objects are stored, and this structure is transitive. More important indicators are at the top, less important ones at the bottom. With any number of characteristics required to organise the structure, the expert can only rearrange the characteristics in the structure with the help of the programme (the corresponding buttons). Thus, the limitation of the number of indicators in the programme has been removed.</p>
-        <p>In addition to simple ordering relationships, the programme allows the input of complex relationships of the following type: "The importance of the second indicator is greater than the fourth and fifth indicators combined"; "The weight of the sixth indicator is equal to the sum of the weights of the seventh and eighth indicators", etc.</p>
-        <p>The maximum number of indicators included in the conversion programme is 25. Once the qualitative indicators have been ordered, the programme calculates the quantitative values, which can then be adjusted. It is possible to enter characteristics that have been ordered in the second or third way and use the programme only for calculation and adjustment. Thanks to the transitive structure in which the qualitative indicators are stored, it is possible to process objects with more than 14 characteristics.</p>
-        <p>To use the programme, you need to create a text document and enter the qualitative indicators of the object. Let's look at how the programme works with the help of examples.</p>
+        <p>On the web page "METHOD", in [3] and in the program described here, a structure is used in which qualitative characteristics of objects are stored and which ensures transitivity of characteristic relations. The more significant indicators are located at the top, the less significant ones below. For any number of characteristics, the expert can only rearrange the characteristics in the structure using the program (the corresponding buttons). So the limit on the number of indicators in the program has been lifted.</p>
+        <p>In addition to simple ordering relations, the program allows the input of complex relations of the following type: "The importance of the second indicator is greater than the fourth and fifth indicators combined"; "The weight of the sixth indicator is equal to the sum of the weights of the seventh and eighth indicators", etc. The number of complex relations is limited to twelve.</p>
+        <p>The maximum number of indicators included in the conversion program is 25. Once the qualitative indicators have been ordered, the program calculates the quantitative values, which can then be adjusted. Thanks to the transitive structure in which the qualitative indicators are stored, it is possible to process objects with more than 14 characteristics.</p>
+        <p>To use the program, you need to create a text document and enter the qualitative indicators of the object. Let's look at how the program works with the help of examples.</p>
         <p>The first illustrative example is taken from [<a href="#lib4">4</a>] and consists of quality indicators of tractors, which significantly affect the competitiveness of machines. The list of quality indicators can be entered from the file tractor.txt (click the "Browse" button and select this file). Double click with the left mouse button in the field below the 'Browse' button. The list of indicators will appear on the screen.</p>
         <div><p>
             <div class="imgbox">
                 <img src="./Img/001_en.jpg" alt="Screenshot 1" >
                 <div>Screenshot 1</div>
             </div>
-        <br>The first step of the expert in this programme is to rank the given tractor quality indicators according to their importance for its competitiveness in accordance with the bottom line on the screen: <p style="margin-top: 5px;">1>2>3>4>5>6>7>8>9>10>11>12.</p></p></div>
+        <br>The first step of the expert in this program is to rank the given tractor quality indicators according to their importance for its competitiveness in accordance with the bottom line on the screen: <p style="margin-top: 5px;">1>2>3>4>5>6>7>8>9>10>11>12.</p></p></div>
         <div><p>Using the ‘Up’ and ‘Down’ buttons, you can arrange the list of indicators in the same way as the leading tractor specialists:</p>
             <div class="imgbox">
                 <img src="./Img/002_en.jpg" alt="Screenshot 2" >
@@ -50,34 +51,34 @@
         <p>Some indicators are considered by experts to have the same weight. This should be noted in the row below the list. For example, 'Engine power' and 'Weight' are equally important for assessing the competitiveness of a tractor. Therefore, between numbers 2 and 3 (the numbering corresponds to the ranked list in screenshot 2) in the last line on the screen, change the '>' sign to a '=' sign. Do the same with the signs between numbers 6, 7 and 8 (to change the sign, left-click on the corresponding window, press the 'Delete' or 'Backspace' key on your keyboard, then press the '=' key). As a result, the bottom line will look like this:
             <p>1>2=3>4>5>6=7=8>9>10>11>12.</p>
         </p>
-        <p>To create a complex relationship, click on the Create complex relationship button. A line appears at the bottom, in which you must enter the number of the indicator. It must be at least 2 less than the total number of indicators. In our case it is less than 11 because the right side of a complex relationship of type (2) (see <b><span><a href="./method_en.html">METHOD</a></span></b>) can have two or more members. If you double-click on the window, two windows will appear on the right. The first one has a '>' sign. This sign can be changed to a '<' or '=' sign. The right window shows all the numbers of the indicators, the larger numbers in the left window. They are connected by the '&' sign. The expert should delete unnecessary numbers with the corresponding '&' signs. (Deletion is carried out using the 'Delete' key). If we want the weight of an indicator to be slightly different from the weight of the neighbouring indicators, we can enter a complex relationship of the following type 1 < 2&3. The last relation can be read as follows The importance of the first indicator is less than the importance of the second and third indicators together.</p>        
+        <p>To build complex relation, click the "Create a complex relation" button. A window will appear on the right. In this window, you need to write the indicator number. This number must be at least 2 less than the total number of indicators. In our case it is less than 11 because the right side of a complex relation of type (2) (see <b><span><a href="./method_en.html">METHOD</a></span></b>) can have two or more members. If you double-click on the window, two windows will appear on the right. The first one has a '>' sign. This sign can be changed to a '<' or '=' sign. The right window shows all the numbers of the indicators, the larger numbers in the left window. They are connected by the '&' sign. The expert should delete unnecessary numbers with the corresponding '&' signs. (Deletion is carried out using the 'Delete' key). If we want the weight of an indicator to be slightly different from the weight of the neighbouring indicators, we can enter a complex relation of the following type 1 < 2&3. The last relation can be read as follows "The importance of the first indicator is less than the importance of the second and third indicators together".</p>        
         <div class="imgbox">
             <img src="./Img/003_en.jpg" alt="Screenshot 3" >
             <div>Screenshot 3</div>
         </div>
-        <p style="margin-top: 10px;">Once you have ranked the indicators and created simple and complex relationships, you can obtain the weights of the indicators by clicking on the 'Calculate weights' button. As a result of solving the linear programming problem, a column of weights for these indicators will appear in front of the indicators on the left.</p>
+        <p style="margin-top: 10px;">Once you have ranked the indicators and created simple and complex relations, you can obtain the weights of the indicators by clicking on the 'Calculate weights' button. As a result of solving the linear programming problem, a column of weights for these indicators will appear in front of the indicators on the left.</p>
             <div class="imgbox">
                 <img src="./Img/004_en.jpg" alt="Screenshot 4" >
                 <div>Screenshot 4</div>
             </div>
-        <p>This weighting calculation can be printed out and, if the expert is fully satisfied, the subroutine for converting qualitative assessments of statements into quantitative ones can be exited by clicking on the button in the top right-hand corner.</p>
+        <p>This weights calculation can be printed out and, if the expert is fully satisfied, the subroutine for converting qualitative assessments of statements into quantitative ones can be exited by clicking on the button in the top right-hand corner.</p>
         <p>The resulting weights can be adjusted by clicking on one of the 'Increase weight', 'Reduce weight' or 'Define' buttons. If you click on one of the 'Increase weight' or 'Reduce weight' buttons, the 'Correction %' window appears, in which you enter the percentage, 10 by default, and then the number of the indicator whose weight you wish to adjust. By double-clicking on this window, the weights will be modified according to the simple and complex constraints entered (4-6 ) (see <b><span><a href="./method_en.html">METHOD</a></span></b>). The 'define' button allows you to define the weight of a given indicator. A new column will appear on the left of the list of indicators with the weights defined.</p>
             <div class="imgbox">
                 <img src="./Img/005_en.jpg" alt="Screenshot 5" >
                 <div>Screenshot 5</div>
             </div>
-        <p>You can clear the calculated weights by clicking on the 'Clear weight calculation' button and start the qualitative assessment conversion from the beginning.</p>
+        <p>You can clear the calculated weights by clicking on the 'Delete the weight calculation' button and start the qualitative assessment conversion from the beginning.</p>
         <p>Clicking the 'Write to file' button will write the leftmost column of weights and indicators to the selected file. Click on the 'View' button to view the contents of the file.</p>
         <div class="imgbox">
-            <img src="./Img/006_en.jpg" alt="Screenshot 3" >
+            <img src="./Img/006_en.jpg" alt="Screenshot 6" >
             <div>Screenshot 6</div>
         </div>
-        <p>The second demonstration example [<a href="#lib5">5</a>]:</p>
+        <p>The second demonstration example [<a href="#lib5">5</a>] (Let's open the file competitiveness.txt.):</p>
         <div class="imgbox">
             <img src="./Img/007_en.jpg" alt="Screenshot 7" >
-            <div>Screenshot 3</div>
+            <div>Screenshot 7</div>
         </div>
-        <p>Create the complex relation 1=3&4 (the weight of the first indicator is equal to the sum of the third and fourth indicators) by clicking on the 'Create complex relation' button. Enter '1' in the left window, replace the '>' sign with '=' and delete unnecessary characters in the third window. Let's do the calculation:</p>
+        <p>Create the complex relation 1=3&4 (the weight of the first indicator is equal to the sum of the third and fourth indicators) by clicking on the 'Create a complex relation' button. Enter '1' in the left window, replace the '>' sign with '=' and delete unnecessary characters in the third window. Let's do the calculation:</p>
             <div class="imgbox">
                 <img src="./Img/008_en.jpg" alt="Screenshot 8" >
                 <div>Screenshot 8</div>
@@ -87,23 +88,22 @@
             <img src="./Img/009_en.jpg" alt="Screenshot 9" >
             <div>Screenshot 9</div>
         </div>
-        <p>In the third example (tanker), the number of indicators is more than 14:</p>
+        <p>In the third example (tanker.txt file), the number of indicators is more than 14:</p>
         <div class="imgbox">
             <img src="./Img/010_en.jpg" alt="Screenshot 10" >
             <div>Screenshot 10</div>
         </div>
-        <p>Possible ordering algorithm:
+        <p>An ordering algorithm is possible:
             <ol>
-                <li>Possible ordering algorithm:</li>
-                <li>Select the indicator from the last line.</li>
-                <li>Compare the selected indicator with the indicator in the 2nd line.</li>
-                <li>If the selected indicator is more important than the indicator from the 2nd line, then move the selected indicator to the 2nd line and go to step 2.</li>
+                <li>Select the indicator from the last row.</li>
+                <li>Compare the selected indicator with the indicator in the first row.</li>
+                <li>IIf the selected indicator from the last row is more important than the indicator from the first row, move the selected indicator to the first row and proceed to step 1.</li>
                 <li>If the selected indicator is less important than the compared indicator, then compare it with the indicator on the next line.</li>
-                <li>If the selected indicator is more important than the indicator of the next line, then move the selected indicator to this next line and go to step 2.</li>
-                <li>If the selected indicator could not be moved, then select the indicator from the previous line and go to step 3.</li>
+                <li>If the selected indicator is more important than the indicator of the next line, then move the selected indicator to this next line and go to step 1.</li>
+                <li>If the selected indicator could not be moved, then select the indicator from the previous line and go to step 2.</li>
             </ol>
         </p>
-        Ranking result using the ‘Up’ and ‘Down’ buttons:
+        <p>Ranking result using the “Up” and “Down” buttons:</p>
         <div class="imgbox">
             <img src="./Img/011_en.jpg" alt="Screenshot 11" >
             <div>Screenshot 11</div>
@@ -119,6 +119,7 @@
             </ol>
         </p>
     </div>
+    <div class="keywords" id="keyw">Keywords: program of conversion of qualitative indicators, transitional structure, demonstration examples of conversion, maximum number of indicators.</div>
     <a href="main_en.html#menu">Back to main page.</a>
 </body>
 </html>
